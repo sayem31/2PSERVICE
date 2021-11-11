@@ -1,0 +1,792 @@
+ Default CSS */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, span, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   background: transparent;
+   /*font-family: 'Merriweather', serif;*/
+  font-family: 'Montserrat', sans-serif;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+button{
+  outline: none !important;
+}
+input
+{
+    outline:none !important;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin:0;
+  padding:0;
+}
+input, button, textarea, select{
+  outline: none;
+}
+.btn.focus, .btn:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+ul{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+span{
+  color: #00AAFF;
+}
+h1{
+  font-size: 50px;
+  color: #FFF;
+  font-weight: 500;
+}
+h2{
+  font-size: 36px;
+  font-weight: 600;
+  color:#222222;
+}
+h3{
+  font-size:20px;
+  font-weight:700;
+  color:#222222;
+}
+h4{
+  font-size: 18px;
+  color:#FFF;
+  font-weight:500;
+}
+h5{
+  font-size:22px;
+  font-weight:700;
+  color:#333333;
+}
+h6{
+  font-size:32px;
+  font-weight:400;
+  color: #333333;
+}
+p{
+  font-size:18px;
+  font-weight:400;
+  color:#9B9B9B;
+}
+img{
+  width:100%;
+  height:auto;
+  object-fit: cover;
+}
+/*========== button design css
+=====================================*/
+.btn-style-1 {
+  background: #333333;
+  color: #FFF;
+  display: inline-block;
+  font-size: 16px;
+  padding: 20px 40px;
+  transition: .5s;
+  transform: skewX(-20deg);
+}
+.btn-style-1:hover{
+  color:#FFF !important;
+}
+.btn-style-2{
+  background:#00AAFF;
+  color:#FFF;
+  display:inline-block;
+  padding:15px 30px;
+  font-size:13px;
+  font-weight:400;
+  border: 2px solid transparent;
+  transition:.5s;
+}
+.btn-style-2:hover{
+  color: #00AAFF;
+  background:#FFF;
+  border: 2px solid #00AAFF;
+}
+.btn-style-3{
+  display: inline-block;
+  border:3px solid #00AAFF;
+  font-size:15px;
+  font-weight:700;
+  padding: 15px;
+  color:#222222;
+  border-radius: 5px;
+  transition:.5s;
+}
+.btn-style-3:hover{
+  background:#222222;
+  color:#00AAFF;
+}
+
+/*========== Section Title css
+=======================================*/
+.section_title{
+  text-align: center;
+}
+.section_title h2{
+  position:relative;
+  padding-bottom: 12px;
+}
+.section_title h2::after{
+  content: '';
+  position: absolute;
+  background: #00AAFF;
+  width: 70px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin: auto;
+}
+/*=========== Start Header Area Css
+===========================================*/
+
+.header_area {
+  border-bottom: 8px solid #024F7D;
+}
+.header_logo_area {
+  display: flex;
+}
+.logo {
+  flex: 0 0 20%;
+}
+.logo a {
+  max-width: 135px;
+  width: 100%;
+  display: block;
+}
+.header_content {
+  flex: 0 0 80%;
+  display: flex;
+  align-items: center;
+}
+.single_header_content {
+  flex: 0 0 25%;
+}
+.header_social ul {
+  display: flex;
+}
+.header_social ul li {
+  margin-right: 10px;
+}
+.header_social ul li a i{
+  width: 35px;
+  height: 35px;
+  background: #00AAFF;
+  text-align: center;
+  line-height: 31px;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 50px;
+  transition:.5s;
+  border: 1px solid transparent;
+}
+.header_social ul li a i:hover{
+  color: #00AAFF;
+  background:#FFF;
+  border:1px solid #00AAFF;
+}
+.single_header_content a img {
+  max-width: 30px;
+  width: 100%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.header_link {
+  display: flex;
+  align-items: center;
+}
+.single_header_content a{
+ color: #606060;
+ font-size:15px;
+ font-weight:400;
+ font-family: 'Merriweather', serif;
+}
+.single_header_content a span{
+  font-size: 16px;
+  font-weight: 700;
+  color:#333333;
+  display: block;
+}
+/*------- mobile menu
+---------------------------*/
+.mobile_menu_icon{
+  display: none;
+}
+.header_menu_area {
+  position: absolute;
+  width: 100%;
+  top: 147px;
+  left: 0;
+  z-index: 999;
+}
+.all_p_humber{
+  width:30px;
+  height:18px;
+  transform: rotate(0deg);
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  
+}
+.all_p_humber span {
+  width: 30px;
+  height: 3px;
+  background: #333333;
+  display: block;
+  position: absolute;
+  opacity:1;
+  left: 0;
+  border-radius:0;
+  transition: .25s ease-in-out;
+
+}
+.all_p_humber span:nth-child(1){
+  top: 0%;
+}
+.all_p_humber span:nth-child(2),
+.all_p_humber span:nth-child(3){
+  top: 8px;
+}
+.all_p_humber span:nth-child(4){
+  top: 16px;
+}
+.all_p_humber.open span:nth-child(1){
+  top:18px;
+  left:50%;
+  width: 0%;
+}
+.all_p_humber.open span:nth-child(2){
+  transform: rotate(45deg);
+}
+.all_p_humber.open span:nth-child(3){
+  transform: rotate(-45deg);
+}
+.all_p_humber.open span:nth-child(4){
+  top:18px;
+  left: 50%;
+  width:0%;
+}
+
+/*=========== End Header Area Css
+===========================================*/
+
+/*=========== Start Banner Area Css
+===========================================*/
+.banner_area{
+  background:url(../images/Bg.png) no-repeat scroll 0 0 / cover;
+}
+.menu_area {
+  background: #00AAFF;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.menu ul li a {
+  display: inline-block;
+  padding: 20px 29px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .5s;
+  border-right: 1px dashed #024F7D;
+  position: relative;
+}
+.menu ul li a:hover{
+  color:#333333;
+}
+.menu ul li:nth-child(7) a, 
+.menu ul li:nth-child(8) a{
+  border:none;
+}
+.menu ul li:nth-child(7) a::after, 
+.menu ul li:nth-child(8) a::after{
+  display:none;
+}
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #024F7D;
+  right: -6px;
+  bottom: 25px;
+  margin: auto;
+  border-radius: 50px;
+}
+.banner_content {
+  padding: 80px 0 240px 0;
+}
+.banner_content h1 {
+  max-width: 65%;
+}
+.banner_content h1 span{
+  color:#00AAFF;
+}
+.banner_content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFF;
+  max-width: 50%;
+  padding-top: 10px;
+}
+/*=========== End Banner Area Css
+===========================================*/
+
+/*=========== Start Quote Area Css
+===========================================*/
+.quote_area {
+  background: #333333;
+}
+.quote_items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.quote-left {
+  flex: 0 0 65%;
+  padding-left:65px;
+}
+.quote-left p{
+  font-size:28px;
+  font-weight:400;
+  color:#FFF;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+}
+.quote-left p span{
+  color:#00AAFF;
+}
+.quote-right {
+  flex: 0 0 30%;
+}
+.quote-right {
+  flex: 0 0 35%;
+  background: #606060;
+  padding: 50px 0;
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%, 0 85%, 10% 50%, 0 20%);
+}
+/*=========== End Quote Area Css
+===========================================*/
+
+/*=========== Start 2P Services Area Css
+===========================================*/
+.serveces_items{
+  display: flex;
+  flex-wrap: wrap;
+}
+.service_left{
+  flex: 0 0 50%;
+  background:#D4D4D4;
+}
+.ser_left_top {
+  max-width: 76%;
+  margin: auto;
+}
+.ser_left_top h2 {
+  font-size: 31px;
+  font-weight: 400;
+  color: #222222;
+  padding: 10px 0;
+}
+.ser_left_top p{
+  font-size:18px;
+  font-weight:400;
+  color:#898686;
+  padding-bottom: 10px;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+.ser_left_middle {
+  background: #00AAFF;
+  padding: 20px 0;
+  max-width: 76%;
+  margin: auto;
+}
+.ser_left_mid {
+  padding: 20px;
+  max-width: 90%;
+  border: 2px dashed #FFF;
+  margin: auto;
+}
+.ser_left_mi p {
+  font-size: 24px;
+  color: #FFF;
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+.service_left > p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;
+  max-width: 76%;
+  margin: auto;
+  padding: 20px 0;
+}
+.service_left_btn{
+  max-width:76%;
+  margin: auto;
+  padding: 5px 0 15px 0;
+}
+/*================ service right css ================*/
+.service_right {
+  flex: 0 0 50%;
+  background: #333333;
+  padding: 50px 50px 0 30px;
+}
+.service_rihgt_title h2{
+  position:relative;
+  padding-bottom: 12px;
+  color:#FFF;
+  font-weight:500;
+}
+.service_rihgt_title h2::after{
+  content: '';
+  position: absolute;
+  background: #00AAFF;
+  width: 70px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+}
+.ser_right_mid_items {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.ser_right_mid_item {
+  flex: 0 0 50%;
+  margin-bottom: 4rem;
+}
+.ser_right_mid_item h4 {
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+}
+.ser_right_mid_item p {
+  font-size: 15px;
+  color: #8F8F8F;
+  font-weight: 400;
+  width: 100%;
+  max-width: 250px;
+}
+/*=========== End 2P Services  Area Css
+===========================================*/
+
+/*=========== Start Our Service Area Css
+===========================================*/
+.our_service_area {
+  padding: 3rem 0;
+}
+.our_service_area .section_title h2{
+  font-weight: 500;
+}
+.our_service_area .section_title h2 span{
+  font-weight:700;
+}
+ .our_service_area .section_title h2::after {
+  right: -50px;
+  margin: auto;
+}
+.our_service_items {
+  display: grid;
+  grid-template-columns: repeat(3, calc(33.33% - 33px));
+  grid-gap: 50px;
+  margin-top: 4rem;
+}
+.our_service_item {
+  border: 1px solid #707070;
+  display: flex;
+}
+.our_content h3 {
+  padding-bottom: 10px;
+}
+.our_ser_icon {
+  position: relative;
+  left: -30px;
+  top: 50px;
+}
+.our_icon a img {
+  max-width: 24px;
+}
+.our_content{
+  padding:10px;
+}
+.our_icon {
+  width: 60px;
+  height: 60px;
+  background: #00AAFF;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 60px;
+}
+/*=========== End Our Service Area Css
+===========================================*/
+
+/*=========== Start Our Gallery Area Css
+===========================================*/
+.our_gallery_area{
+  padding:2rem 0;
+}
+.our_gallery_area .section_title h2{
+  font-weight:500;
+}
+.our_gallery_area .section_title h2::after {
+  right: -105px;
+  margin: auto;
+}
+.our_gallery_items {
+  display: grid;
+  grid-template-columns: repeat(4,calc(25% - 8px));
+  grid-gap: 10px;
+  margin-top:2rem;
+}
+.our_gallery_item img {
+  width: 100%;
+}
+/*=========== End Our Gallery Area Css
+===========================================*/
+
+/*=========== Start Quote Area Css
+===========================================*/
+.get_quote_area{
+  padding:2rem 0;
+}
+.get_quote_area .section_title{
+  padding-bottom: 1rem;
+}
+.get_quote_area .section_title h2{
+  font-weight:500;
+}
+.get_quote_area .section_title h2::after {
+  right: -150px;
+  margin: auto;
+}
+.discuss_area {
+  background: #22B2FB;
+  padding: 5rem 0;
+}
+.discuss_content {
+  max-width: 40%;
+  margin: auto;
+}
+.discuss_content h3 {
+  font-size:30px;
+  font-weight:400;
+  color: #FFF;
+  max-width: 60%;
+  padding-bottom: 2rem;
+}
+.discuss_content form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.discuss_content form input[type="text"], 
+.discuss_content form input[type="email"], 
+.discuss_content form input[type="tel"] {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  background: none;
+  border: 1px solid #DDDFE1;
+  color: #FFF;
+  flex: 0 0 48%;
+}
+.discuss_content form input-placeholder{
+  color:#FFF;
+}
+.discuss_content form textarea {
+  flex: 0 0 100%;
+  background: none;
+  color: #fFF;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #DDDFE1;
+  height: 100px;
+}
+.btn-style-4{
+  background:#FFF;
+  border:1px solid transparent;
+  font-size:16px;
+  font-weight: 700;
+  padding:15px 30px;
+  color:#2290FF;
+  border-radius:100px;
+  transition:.5s;
+}
+.btn-style-4:hover{
+  background:#2290FF;
+  border: 1px solid #FFF;
+  color:#FFF;
+}
+.discuss_content form button{
+  margin-top: 20px;
+}
+/*=========== End Quote Area Css
+===========================================*/
+
+/*=========== Start Client_Feedback Area Css
+===========================================*/
+.client_feedback_area{
+  padding: 4rem 0;
+}
+.client_feedback_area .section_title{
+  text-align:inherit;
+}
+.client_feedback_area .section_title h2{
+  font-weight:400;
+}
+.client_feedback_area .section_title h2 span{
+  font-weight: 600;
+}
+.client_feedback_area .section_title h2::after {
+  margin: inherit;
+}
+.client_feedback_items {
+  display: grid;
+  grid-template-columns: repeat(3,calc( 33.33% - 21px));
+  grid-gap: 30px;
+  margin-top: 3rem;
+}
+.client_top {
+  display: flex;
+  box-shadow: 1px 1px 10px #d9d5d5;
+  padding: 30px 7px;
+}
+.cli_icon {
+  position: relative;
+  left: -21px;
+  flex: 0 0 15%;
+}
+.cl_icon a img {
+  max-width: 40px;
+}
+.cli_content {
+  flex: 0 0 85%;
+}
+.cli_content p {
+  font-size: 15px;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  max-width: 250px;
+  width:100%;
+}
+.client_bottom {
+  margin-top: 20px;
+}
+.client_bottom a{ 
+  display: inline-block;
+  font-size:15px;
+  color: #22B2FB;
+  font-weight:400;
+}
+/*=========== End Client_Feedback Area Css
+===========================================*/
+
+/*=========== Start Contact Area Css
+===========================================*/
+.contact_area{
+  padding:4rem 0;
+}
+.max{
+  max-width: 25px;
+}
+.contact_items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact_item {
+  flex: 0 0 33.33%;
+}
+.contact_title h6{
+  padding:15px 0;
+}
+.contact_item h5{
+  padding:10px 0;
+}
+.contact_item ul li a span {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+  color: #6E6E6E;
+}
+.contact_item ul li {
+  margin-bottom: 10px;
+}
+.contact_social_icon {
+  margin-top: 3rem;
+}
+.contact_social_icon ul li a {
+  display: inline-block;
+  margin-right: 10px;
+}
+.contact_social_icon ul li a i {
+  width: 50px;
+  height: 50px;
+  background: #00AAFF;
+  font-size: 30px;
+  color: #FFF;
+  line-height: 49px;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  transition: .5s;
+}
+.contact_social_icon ul li a i:hover{
+  background:#FFF;
+  border: 1px solid #00AAFF;
+  color: #00AAFF;
+}
+/*=========== End Contact Area Css
+===========================================*/
+
+/*=========== Start Footer Area Css
+===========================================*/
+.footer_area{
+  padding:15px;
+  background:#343434;
+}
+.footer_context {
+  text-align: center;
+}
+.footer_context p{
+  font-size:14px;
+  font-weight:700;
+  color:#FFF;
+}
+footer_context p b
+  color:red;
+}
+/*=========== End Footer Area Css
+===========================================
